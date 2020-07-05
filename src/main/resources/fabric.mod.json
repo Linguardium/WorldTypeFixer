@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "wtflib",
+  "version": "${version}",
+  "name": "WorldTypeFixer",
+  "description": "add custom world types",
+  "authors": [
+    "Linguardium"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/wtflib/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "mod.linguardium.wtflib.Main"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "wtflib.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  },
+  "accessWidener": "wtflib.aw"
+}

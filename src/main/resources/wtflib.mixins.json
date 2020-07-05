@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "mod.linguardium.wtflib.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinGeneratorOptions"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
