@@ -3,12 +3,16 @@ allow custom world types to be added
 
 
 in the main initialzer:
+
 `		WorldTypeRegistry.registerLevelType(<WorldType_Id>,<GeneratorOptionsSupplier(seed,properties)>);`
-This is used to provide level type data to worlds being generated/loaded with the level-type setting.
+
+ - This is used to provide level type data to worlds being generated/loaded with the level-type setting.
 
 in the client initializer:
-WorldTypeRegistry.registerWorldType(<WorldType_Id>, constructor/supplier for CustomGeneratorType);
 
+`WorldTypeRegistry.registerWorldType(<WorldType_Id>, constructor/supplier for CustomGeneratorType);`
+ - This provides the world type to the options screen on the single player new-game menu
+ 
 for client implementations:
 extend CustomGeneratorType 
 ```
